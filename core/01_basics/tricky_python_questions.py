@@ -147,6 +147,16 @@ print("Example 11 Output 2:", c is d)
 # Expected Output:
 # 🔍Example 11 Output 1: True
 # 🔍Example 11 Output 2: False
+'''
+🧪 Proof using id()
+is checks memory identity, not value. Python caches integers \
+from −5 to 256, so 256 is 256 is True, but 257 creates separate objects, making 257 is 257 False.
+
+Python remembers numbers from -5 to 256. So if you use these numbers, Python reuses the same box in memory.\
+Numbers bigger than 256 get new boxes, so they are not the same object.
+print(id(a), id(b))  # same
+print(id(c), id(d))  # different
+'''
 
 # --------------------------------------------------
 # 🔹Example 12: Floating Point Precision
