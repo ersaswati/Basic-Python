@@ -1,0 +1,45 @@
+🏁 One-Line Answer ⭐
+
+A static method is a function inside a class that does not access instance or class data and is used for utility or helper logic.
+
+📊 Comparison Table b/w static method and normal Method
+
+| Feature                   | Normal Method | Static Method |
+| ------------------------- | ------------- | ------------- |
+| Uses `self`               | ✅             | ❌          |
+| Access instance variables | ✅             | ❌          |
+| Belongs to object         | ✅             | ❌          |
+| Multiprocessing safe      | ⚠️            | ✅           |
+| Logical grouping          | ⚠️            | ✅           |
+
+🎯 When SHOULD you use @staticmethod?
+Use it when:
+1> Logic does not depend on object state
+2> Function is reusable
+3> You want clean structure
+4> Using multiprocessing / threading
+
+🎯 @staticmethod vs @classmethod ⭐
+@staticmethod
+A static method is a utility function inside a class that does not access class or instance data.
+
+@classmethod
+A class method receives the class as an argument and is used to work with class-level data or create alternative constructors.
+
+👉 @classmethod respects inheritance
+👉 @staticmethod does NOT
+
+Needs class data?     → @classmethod
+Needs object data?    → normal method
+Needs nothing?        → @staticmethod
+
+
+
+🧠 Visual Comparison
+| Syntax     | Meaning               | Interpreter Role  |
+| ---------- | --------------------- | ----------------- |
+| `__func__` | Special dunder method | Python calls it   |
+| `__func`   | Name mangled          | Python renames it |
+| `_func`    | Protected convention  | Human convention  |
+| `func`     | Normal method         | No restriction    |
+
