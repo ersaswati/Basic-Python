@@ -43,3 +43,5 @@ Needs nothing?        → @staticmethod
 | `_func`    | Protected convention  | Human convention  |
 | `func`     | Normal method         | No restriction    |
 
+
+
